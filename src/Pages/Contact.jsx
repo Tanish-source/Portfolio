@@ -384,7 +384,9 @@ const Contact = () => {
   return (
 
     <>
-      <TransitionEffect />
+      <div className='relative'>
+        <TransitionEffect />
+      </div>
       <main className='flex w-full flex-col items-center justify-center'>
         <div className='w-full h-full inline-block z-0 lg:p-20 p-5 pt-10'>
           <AnimatedText text="Get In Touch" className='sm:mb-16 mb-10 md:!text-8xl sm:!text-7xl !text-5xl sm:text-left text-center tracking-tighter sm:mt-0 mt-20' />

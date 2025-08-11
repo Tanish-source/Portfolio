@@ -7,7 +7,9 @@ import TransitionEffect from '@/Components/TransitionEffect'
 const Home = () => {
     return (
         <>
-            <TransitionEffect />
+            <div className='relative'>
+                <TransitionEffect />
+            </div>
             <main className='flex items-center w-full min-h-screen -my-20'>
                 <div className='w-full h-full inline-block z-0 sm:p-20 p-5 pt-0'>
                     <div className='flex items-center justify-center h-full'>

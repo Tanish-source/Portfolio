@@ -32,7 +32,7 @@ const FeturedProject = ({ type, title, summary, img, link, github }) => {
         <p className="my-2 font-medium text-white sm:text-md text-sm">{summary}</p>
         <div className="mt-2 flex items-center">
           <Link to={github} target="_blank">
-            <i class="devicon-github-original sm:text-4xl text-3xl"></i>
+            <i className="devicon-github-original sm:text-4xl text-3xl"></i>
           </Link>
           <Link to={link} target="_blank" className="ml-4 sm:rounded-lg rounded-md bg-white text-black p-2 px-6 sm:text-lg text-md font-semibold">
             Visit Project
@@ -70,7 +70,7 @@ const Project = ({ title, type, img, link, github }) => {
             Visit Project
           </Link>
           <Link to={github} target="_blank">
-            <i class="devicon-github-original text-4xl"></i>
+            <i className="devicon-github-original text-4xl"></i>
           </Link>
         </div>
       </div>
@@ -81,7 +81,9 @@ const Project = ({ title, type, img, link, github }) => {
 const Projects = () => {
   return (
     <>
-      <TransitionEffect />
+      <div className="relative">
+        <TransitionEffect />
+      </div>
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <div className="w-full h-full inline-block z-0 lg:p-20 p-8 pt-16">
           <AnimatedText text="Imagination Trumps Knowledge!" className="xl:!text-8xl sm:!text-7xl !text-5xl sm:mb-16 mb-12" />

@@ -34,8 +34,9 @@ const AnimatedNumbers = ({ value }) => {
 const About = () => {
   return (
     <>
-      <TransitionEffect />
-      <main className='flex w-full flex-col items-center justify-center'>
+      <div className='relative'>
+        <TransitionEffect />
+      </div>      <main className='flex w-full flex-col items-center justify-center'>
         <div className='w-full h-full inline-block z-0 sm:p-20 p-5 pt-16'>
           <AnimatedText text="Passion Fuels Purpose!" className='sm:mb-16 mb-8 lg:!text-8xl md:!text-7xl sm:!text-6xl !text-4xl' />
 
