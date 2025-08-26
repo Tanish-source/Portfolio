@@ -5,6 +5,8 @@ import PrepWise from '/images/projects/PrepWise.png';
 import DigitalAgency from '/images/projects/DigitalAgency.png'
 import TwoGood from '/images/projects/TwoGood.png'
 import Cuberto from '/images/projects/Cuberto.png'
+import SkillBarter from '/images/projects/SkillBarter.png'
+import HireWise from '/images/projects/HireWise.png'
 import TransitionEffect from "@/Components/TransitionEffect";
 
 const FeturedProject = ({ type, title, summary, img, link, github }) => {
@@ -92,11 +94,43 @@ const Projects = () => {
             {/* Featured Project - Full width always */}
             <div className="col-span-1 sm:col-span-2 xl:col-span-12">
               <FeturedProject
+                title="SkillBarter - Learn Grow Together"
+                summary="SkillBarter is a peer-to-peer learning platform where users exchange skills, earn credits, and access courses. It offers a credit-based course marketplace, AI study assistant, learner chat, progress tracking, and a recommendation engine that matches users by skills and interests. Built with Django, React, MongoDB, Tailwind, and AWS, it fosters collaborative, community-driven learning."
+                type="Featured Project"
+                img={SkillBarter}
+                link="https://skillbarter-lms.vercel.app"
+                github="https://github.com/Tanish-source"
+              />
+            </div>
+
+            <div className="col-span-1 sm:col-span-1 xl:col-span-6">
+              <Project
                 title="PrepWise - AI Mock Interview Platform"
-                summary="PrepWise is a full-stack project that lets users practice mock interviews with AI voice agents. Built with Next.js, Firebase, Tailwind CSS, and Vapi AI, it generates custom questions, conducts real-time interviews, and provides AI-based feedback with performance scores. Ideal for improving interview skills."
                 type="Featured Project"
                 img={PrepWise}
                 link="https://ai-mock-interview-app-iota.vercel.app"
+                github="https://github.com/Tanish-source"
+              />
+            </div>
+
+            {/* Another Featured Project - Full width */}
+            <div className="col-span-1 sm:col-span-1 xl:col-span-6">
+              <Project
+                title="Digital Web Agency"
+                type="Featured Project"
+                img={DigitalAgency}
+                link="https://digital-web-agency-t.vercel.app"
+                github="https://github.com/Tanish-source"
+              />
+            </div>
+
+            <div className="col-span-1 sm:col-span-2 xl:col-span-12">
+              <FeturedProject
+                title="HireWise - Your AI-Powered Career Companion."
+                summary="HireWise is an AI-powered career platform that combines resume analysis, smart job browsing, and an employer admin panel with advanced tools like an AI Career Assistant and AI Mock Interviews with feedback. By uniting job search, preparation, and guidance in one place, it helps candidates stand out and achieve their dream careers."
+                type="Featured Project"
+                img={HireWise}
+                link="https://github.com/Tanish-source"
                 github="https://github.com/Tanish-source"
               />
             </div>
@@ -118,18 +152,6 @@ const Projects = () => {
                 type="Project"
                 img={Cuberto}
                 link="https://cuberto-seven.vercel.app"
-                github="https://github.com/Tanish-source"
-              />
-            </div>
-
-            {/* Another Featured Project - Full width */}
-            <div className="col-span-1 sm:col-span-2 xl:col-span-12">
-              <FeturedProject
-                title="Digital Web Agency"
-                summary="Developed a visually rich and interactive Digital Web Agency website using HTML, CSS, JavaScript, Locomotive.js, GSAP, and Typed.js. The project emphasized fluid scrolling, engaging animations, and an intuitive user interface to enhance overall user experience."
-                type="Featured Project"
-                img={DigitalAgency}
-                link="https://digital-web-agency-t.vercel.app"
                 github="https://github.com/Tanish-source"
               />
             </div>
