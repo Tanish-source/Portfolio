@@ -7,6 +7,9 @@ import TwoGood from '/images/projects/TwoGood.png'
 import Cuberto from '/images/projects/Cuberto.png'
 import SkillBarter from '/images/projects/SkillBarter.png'
 import HireWise from '/images/projects/HireWise.png'
+import BlobMixer from '/images/projects/BlobMixer.png'
+import Zajnocom from '/images/projects/Zajno.com.png'
+import ThePlanets from '/images/projects/The-Planets.png'
 import TransitionEffect from "@/Components/TransitionEffect";
 
 const FeturedProject = ({ type, title, summary, img, link, github }) => {
@@ -152,6 +155,38 @@ const Projects = () => {
                 type="Project"
                 img={Cuberto}
                 link="https://cuberto-seven.vercel.app"
+                github="https://github.com/Tanish-source"
+              />
+            </div>
+
+            <div className="col-span-1 sm:col-span-2 xl:col-span-12">
+              <FeturedProject
+                title="Blob Mixer – Interactive 3D Playground with Custom Shaders"
+                summary="Built an interactive WebGL experience where users can manipulate a dynamic “blob” using custom GLSL shaders, HDRI reflections, and live material controls. Features focus mode with orbit navigation, smooth GSAP transitions, and an intuitive GUI for real-time surface tweaking."
+                type="Featured Project"
+                img={BlobMixer}
+                link="https://blobmixer-ten.vercel.app"
+                github="https://github.com/Tanish-source"
+              />
+            </div>
+
+            {/* Two projects side-by-side on sm+, stacked on mobile */}
+            <div className="col-span-1 sm:col-span-1 xl:col-span-6">
+              <Project
+                title="Zajno.com"
+                type="Project"
+                img={Zajnocom}
+                link="https://zajno-com-sage.vercel.app"
+                github="https://github.com/Tanish-source"
+              />
+            </div>
+
+            <div className="col-span-1 sm:col-span-1 xl:col-span-6">
+              <Project
+                title="The-Planets"
+                type="Project"
+                img={ThePlanets}
+                link="https://github.com/Tanish-source"
                 github="https://github.com/Tanish-source"
               />
             </div>
