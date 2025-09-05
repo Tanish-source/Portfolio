@@ -19,7 +19,7 @@ const Home = () => {
                                 Explore my latest projects, showcasing my expertise in React.js and web development.</p>
                             <div className='flex gap-4 items-center self-center mt-2'>
                                 <Link to='/Resume.pdf' target='_blank' className='flex gap-2 items-center hover:bg-[#1b1b1b] hover:text-white sm:p-2.5 sm:px-6 p-2 px-4 rounded-lg sm:text-lg text:md font-semibold bg-[#f5f5f5] text-black border-2 border-solid border-transparent hover:border-white' download={true}>Resume<ExternalLink /></Link>
-                                <Link to='mailto:tanishdpatel29112005@gmail.com' className='sm:text-lg text-md font-medium capitalize underline'>Contact</Link>
+                                <Link to='/contact' className='sm:text-lg text-md font-medium capitalize underline'>Contact</Link>
                             </div>
                         </div>
                     </div>
