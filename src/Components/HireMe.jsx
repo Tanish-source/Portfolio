@@ -20,7 +20,7 @@ const HireMe = () => {
     <div className='fixed top-0 right-0 sm:top-auto sm:right-auto sm:bottom-4 sm:left-4 flex items-center justify-center overflow-hidden z-[10]'>
       <div className='sm:w-48 w-26 h-auto flex items-center justify-center relative'>
         <CircularText className={'fill-white animate-spin [animation-duration:8s]'} />
-        <Link to='mailto:tanishdpatel29112005@gmail.com' className='sm:text-lg text-[12px] flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-black shadow-md border border-solid border-white bg-white hover:bg-[#1b1b1b] hover:text-white sm:w-20 sm:h-20 w-13 h-13 rounded-full font-semibold'>Hire Me</Link>
+        <Link to='mailto:tanishdpatel29112005@gmail.com' className='sm:text-lg text-[12px] flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-black shadow-md border border-solid border-white bg-white sm:w-20 sm:h-20 w-13 h-13 rounded-full font-semibold'>Hire Me</Link>
       </div>
     </div>
   )

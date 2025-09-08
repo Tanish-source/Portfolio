@@ -85,22 +85,6 @@
 
 // export default Contact
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // import { useState, useEffect, useRef } from 'react'
 // import FlipLink from '@/Components/ui/text-effect-flipper'
 
@@ -259,40 +243,14 @@
 
 // export default Contact
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import { useState, useEffect, useRef } from 'react';
-import FlipLink from '@/Components/ui/text-effect-flipper';
-import AnimatedText from '@/Components/AnimatedText';
+import { useState, useEffect, useRef } from "react";
+import FlipLink from "@/Components/ui/text-effect-flipper";
+import AnimatedText from "@/Components/AnimatedText";
+import { HoverBorderGradient } from "@/Components/ui/hover-border-gradient";
 import emailjs from "emailjs-com";
-import { toast } from 'sonner';
-import TransitionEffect from "@/Components/TransitionEffect";
+import { toast } from "sonner";
 
 const Contact = () => {
-
   const [form, setForm] = useState({
     name: "",
     number: "",
@@ -308,12 +266,7 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .send(
-        "service_cm36mfz",
-        "template_bbfkn3w",
-        form,
-        "PYaRMGEqZQVd490Dc"
-      )
+      .send("service_cm36mfz", "template_bbfkn3w", form, "PYaRMGEqZQVd490Dc")
       .then(
         () => {
           toast("Message sent successfully!");
@@ -324,7 +277,6 @@ const Contact = () => {
         }
       );
   };
-
 
   const [leftRotate, setLeftRotate] = useState(0);
   const [rightRotate, setRightRotate] = useState(0);
@@ -377,29 +329,30 @@ const Contact = () => {
       }
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   return (
-
     <>
-      <div className='relative'>
+      {/* <div className='relative'>
         <TransitionEffect />
-      </div>
-      <main className='flex w-full flex-col items-center justify-center'>
-        <div className='w-full h-full inline-block z-0 lg:p-20 p-5 pt-10'>
-          <AnimatedText text="Get In Touch" className='sm:mb-16 mb-10 md:!text-8xl sm:!text-7xl !text-5xl sm:text-left text-center tracking-tighter sm:mt-0 mt-20' />
-          <h2 className='text-white/75 mt-4 mb-8'>Fill the form below : </h2>
-
-
+      </div> */}
+      <main className="flex w-full flex-col items-center justify-center">
+        <div className="w-full h-full inline-block z-0 lg:p-20 p-5 pt-10">
+          <AnimatedText
+            className="!text-5xl sm:!text-6xl mb-20"
+            text="Get In Touch"
+          />
+            
+          <h2 className="text-white/75 mt-4 mb-8">Fill the form below : </h2>
           <form onSubmit={handleSubmit}>
             <p
               style={{
                 fontFamily: '"Host Grotesk", sans-serif',
                 lineHeight: 1.3,
               }}
-              className="font-normal md:text-6xl sm:text-5xl text-3xl"
+              className="font-normal md:text-5xl sm:text-4xl text-3xl"
             >
               Hi! My name is{" "}
               <input
@@ -445,22 +398,16 @@ const Contact = () => {
             </p>
 
             <div className="flex items-center justify-end sm:mt-10 mt-16">
-              <button
-                type="submit"
-                className="cursor-pointer hover:bg-black hover:text-white hover:border-white bg-white text-black border-2 border-transparent rounded-4xl sm:px-9 sm:py-3 px-7 py-2 font-semibold sm:text-xl text-lg"
-              >
+              <HoverBorderGradient as="button" type="submit">
                 Send Message
-              </button>
+              </HoverBorderGradient>
             </div>
           </form>
-
-
         </div>
       </main>
 
       <div className="relative flex flex-col gap-4 items-center justify-center text-black font-semibold sm:h-screen sm:py-20 py-30 bg-[#c14ba1]">
         <div className="hidden z-[1] lg:flex gap-10 absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
-
           {/* LEFT EYE */}
           <div className="flex items-center justify-center w-[230.4px] h-[230.4px] rounded-full bg-white">
             <div
@@ -468,11 +415,13 @@ const Contact = () => {
               className="relative w-2/3 h-2/3 rounded-full bg-[#1b1b1b]"
               style={{
                 transform: `translate(${leftOffset.x}px, ${leftOffset.y}px)`,
-                transition: 'transform 90ms linear', // smooth small movement
+                transition: "transform 90ms linear", // smooth small movement
               }}
             >
               <div
-                style={{ transform: `translate(-50%,-50%) rotate(${leftRotate}deg)` }}
+                style={{
+                  transform: `translate(-50%,-50%) rotate(${leftRotate}deg)`,
+                }}
                 className="line absolute top-1/2 left-1/2 w-1/2 h-5"
               >
                 <div className="absolute right-0 w-5 h-5 rounded-full bg-white"></div>
@@ -487,33 +436,37 @@ const Contact = () => {
               className="relative w-2/3 h-2/3 rounded-full bg-[#1b1b1b]"
               style={{
                 transform: `translate(${rightOffset.x}px, ${rightOffset.y}px)`,
-                transition: 'transform 90ms linear',
+                transition: "transform 90ms linear",
               }}
             >
               <div
-                style={{ transform: `translate(-50%,-50%) rotate(${rightRotate}deg)` }}
+                style={{
+                  transform: `translate(-50%,-50%) rotate(${rightRotate}deg)`,
+                }}
                 className="line absolute top-1/2 left-1/2 w-1/2 h-5"
               >
                 <div className="absolute right-0 w-5 h-5 rounded-full bg-white"></div>
               </div>
             </div>
           </div>
-
         </div>
 
         {/* Links */}
         <div>
-          <FlipLink href="https://www.linkedin.com/in/tanish-patel-99579b339/">Linkedin</FlipLink>
+          <FlipLink href="https://www.linkedin.com/in/tanish-patel-99579b339/">
+            Linkedin
+          </FlipLink>
         </div>
         <div className="flex xl:flex-row flex-col xl:gap-20 sm:gap-0 gap-4 items-center justify-center">
           <FlipLink href="https://github.com/Tanish-source">Github</FlipLink>
           <FlipLink href="https://x.com/tanish__29">Twitter</FlipLink>
         </div>
         <div>
-          <FlipLink href="https://www.facebook.com/gitaben.patel.18488">Facebook</FlipLink>
+          <FlipLink href="https://www.facebook.com/gitaben.patel.18488">
+            Facebook
+          </FlipLink>
         </div>
       </div>
-
     </>
   );
 };
