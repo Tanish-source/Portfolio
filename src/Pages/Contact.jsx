@@ -344,7 +344,7 @@ const Contact = () => {
             className="!text-5xl sm:!text-6xl mb-20"
             text="Get In Touch"
           />
-            
+
           <h2 className="text-white/75 mt-4 mb-8">Fill the form below : </h2>
           <form onSubmit={handleSubmit}>
             <p
@@ -406,7 +406,8 @@ const Contact = () => {
         </div>
       </main>
 
-      <div className="relative flex flex-col gap-4 items-center justify-center text-black font-semibold sm:h-screen sm:py-20 py-30 bg-[#c14ba1]">
+      <div className="relative flex flex-col gap-4 items-center justify-center text-black font-semibold sm:h-screen sm:py-20 py-30 bg-[#4167A6] 
+            bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-from)_0%,#75A0E1_30%,#4167A6_100%)]">
         <div className="hidden z-[1] lg:flex gap-10 absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
           {/* LEFT EYE */}
           <div className="flex items-center justify-center w-[230.4px] h-[230.4px] rounded-full bg-white">

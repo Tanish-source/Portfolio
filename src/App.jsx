@@ -23,7 +23,7 @@ function App() {
     <>
       <div className='w-full min-h-screen bg-[#181818] text-white overflow-x-hidden'>
         <HireMe />
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="*" element={<NotFound />} />

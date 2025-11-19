@@ -20,7 +20,7 @@ export default function Skills() {
       "#818D92",
       "#58BC5A",
       "#2176FF",
-      "#B63E96",
+      "#39689B",
       "#22AAA1",
     ];
 
@@ -32,9 +32,8 @@ export default function Skills() {
       if (element) {
         const rect = element.getBoundingClientRect();
         const containerRect = container.getBoundingClientRect();
-        highlight.style.transform = `translate(${
-          rect.left - containerRect.left
-        }px, ${rect.top - containerRect.top}px)`;
+        highlight.style.transform = `translate(${rect.left - containerRect.left
+          }px, ${rect.top - containerRect.top}px)`;
         highlight.style.width = `${rect.width}px`;
         highlight.style.height = `${rect.height}px`;
         highlight.style.backgroundColor = element.dataset.color;
@@ -94,7 +93,7 @@ export default function Skills() {
       />
 
       <div
-        className="relative w-full flex justify-center items-center px-4 py-8 sm:py-16 lg:py-0 lg:h-[100svh]"
+        className="relative w-full flex justify-center items-center px-0 py-8 sm:py-16 lg:py-0 lg:h-[100svh]"
         ref={containerRef}
       >
         {/* Desktop Grid Layout */}
