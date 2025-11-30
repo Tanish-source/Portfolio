@@ -28,7 +28,7 @@ const AnimatedNumbers = ({ value }) => {
     });
   }, [springValue, value]);
 
-  return <span ref={ref} className="text-center"></span>;
+  return <span ref={ref} className="text-center font-cash"></span>;
 };
 
 const About = () => {
@@ -44,7 +44,7 @@ const About = () => {
             {/* Top: Biography and Portrait split into two rows */}
             <div className="col-span-12 md:col-span-9 flex items-center justify-center">
               <CardSpotlight className="h-full w-full min-h-[180px] flex flex-col items-center justify-center text-left">
-                <h2 className="mb-4 text-lg font-bold uppercase text-white/75">
+                <h2 className="mb-4 text-xl font-cash font-medium uppercase text-white/75">
                   Biography
                 </h2>
                 <p className="text-sm text-white/80 leading-relaxed">
@@ -70,10 +70,10 @@ const About = () => {
             {/* Row 2: two small stats + wide description */}
             <div className="col-span-12 sm:col-span-2 flex items-center justify-center">
               <CardSpotlight className="h-full w-full min-h-[140px] flex flex-col items-center justify-center text-center">
-                <span className="text-5xl font-bold">
+                <span className="text-5xl font-medium">
                   <AnimatedNumbers value={18} />+
                 </span>
-                <h3 className="text-md font-medium text-white/75 mt-2">
+                <h3 className="text-sm font-medium text-white/75 mt-2">
                   Completed Projects
                 </h3>
               </CardSpotlight>
@@ -81,10 +81,10 @@ const About = () => {
 
             <div className="col-span-12 sm:col-span-2 flex items-center justify-center">
               <CardSpotlight className="h-full w-full min-h-[140px] flex flex-col items-center justify-center text-center">
-                <span className="text-5xl font-bold">
+                <span className="text-5xl font-medium">
                   <AnimatedNumbers value={2} />+
                 </span>
-                <h3 className="text-md font-medium text-white/75 mt-2">
+                <h3 className="text-sm font-medium text-white/75 mt-2">
                   Years <br /> Learning
                 </h3>
               </CardSpotlight>
@@ -111,7 +111,7 @@ const About = () => {
                   <i className="fas fa-pen-nib"></i>
                 </span>
                 <div className="leading-tight space-y-2">
-                  <div className="text-3xl font-bold">UI/UX Expert</div>
+                  <div className="text-xl font-cash font-medium">UI/UX Expert</div>
                   <div className="text-xs text-white/70 w-60">
                     Crafting beautiful, intuitive, and impactful digital
                     experiences.
@@ -122,11 +122,11 @@ const About = () => {
 
             <div className="col-span-12 sm:col-span-5 flex items-center justify-center">
               <CardSpotlight className="h-full w-full min-h-[120px] flex flex-col items-center justify-center text-center">
-                <span className="text-5xl font-bold mt-2">
+                <span className="text-5xl font-medium mt-2">
                   <AnimatedNumbers value={22} />+
                 </span>
                 <div>
-                  <h3 className="text-md font-medium text-white/75 mt-2">
+                  <h3 className="text-sm font-medium text-white/75 mt-2">
                     Technologies Learned
                   </h3>
                 </div>
@@ -135,11 +135,11 @@ const About = () => {
 
             <div className="col-span-12 sm:col-span-3 flex items-center justify-center">
               <CardSpotlight className="h-full w-full min-h-[120px] flex flex-col items-center justify-center text-center">
-                <span className="text-5xl font-bold mt-2">
+                <span className="text-5xl font-medium mt-2">
                   <AnimatedNumbers value={4} />+
                 </span>
                 <div>
-                  <h3 className="text-md font-medium text-white/75 mt-2">
+                  <h3 className="text-sm font-medium text-white/75 mt-2">
                     Certificates Archived
                   </h3>
                 </div>

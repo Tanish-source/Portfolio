@@ -211,8 +211,8 @@ export default function Home() {
             <img ref={imgRef} src={Hero} alt="" className="hidden" />
 
             {/* Content */}
-            <div className="absolute bottom-0 left-0 w-full py-6 px-6 sm:w-[60%]">
-                <h1 className="text-3xl md:text-6xl font-medium leading-none tracking-tight">
+            <div className="absolute bottom-0 left-0 w-full py-6 px-6 sm:w-[56%]">
+                <h1 className="text-3xl md:text-6xl font-cash font-medium leading-none">
                     Turning vision into reality with code and design
                 </h1>
             </div>

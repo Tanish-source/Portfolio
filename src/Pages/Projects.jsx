@@ -47,7 +47,7 @@ const Project = ({ title, img, link }) => {
             />
           </div>
           <div className="w-full py-4 px-2 flex items-center justify-between">
-            <h2 className="text-left text-xl font-semibold tracking-tight">
+            <h2 className="text-left text-xl font-cash font-medium tracking-wide">
               {title}
             </h2>
             <ArrowUpRight />

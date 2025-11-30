@@ -12,7 +12,7 @@ export function HoverBorderGradient({
     <Tag
       className={cn(
         "relative inline-flex items-center justify-center px-16 py-3 border border-white hover:border-[#181818] rounded-xs " +
-        "text-white transition overflow-hidden group",
+        "text-white transition-all duration-[0.3s] overflow-hidden group",
         className
       )}
       {...props}
